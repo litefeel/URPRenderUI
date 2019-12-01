@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
-public class UICameraRenderer : ScriptableRendererFeature
+public class UIRenderer : ScriptableRendererFeature
 {
     class CustomRenderPass : ScriptableRenderPass
     {
@@ -27,7 +27,7 @@ public class UICameraRenderer : ScriptableRendererFeature
             //if (stencilState.enabled)
             //{
             //    m_RenderStateBlock.stencilReference = stencilReference;
-            //    m_RenderStateBlock.mask = RenderStateMask.Stencil;
+            m_RenderStateBlock.mask = RenderStateMask.Stencil;
             //    m_RenderStateBlock.stencilState = stencilState;
             //}
         }
@@ -58,7 +58,7 @@ public class UICameraRenderer : ScriptableRendererFeature
                     cmd.SetViewProjectionMatrices(camera.worldToCameraMatrix, uiCamera.projectionMatrix);
                     context.ExecuteCommandBuffer(cmd);
 
-                    var sortFlags = (m_IsOpaque) ? renderingData.cameraData.defaultOpaqueSortFlags : SortingCriteria.CanvasOrder | SortingCriteria.SortingLayer;
+                    var sortFlags = (m_IsOpaque) ? renderingData.cameraData.defaultOpaqueSortFlags : SortingCriteria.CommonTransparent;
                     var drawSettings = CreateDrawingSettings(m_ShaderTagIdList, ref renderingData, sortFlags);
                     context.DrawRenderers(renderingData.cullResults, ref drawSettings, ref m_FilteringSettings, ref m_RenderStateBlock);
 
