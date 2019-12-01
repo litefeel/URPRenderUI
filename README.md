@@ -1,2 +1,2 @@
-# URPUICamera
- UI Camera on Universal Render Pipeline
+# URPUIRenderer
+ Render UI on Universal Render Pipeline
