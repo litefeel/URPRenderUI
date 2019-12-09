@@ -18,10 +18,6 @@
   "dependencies": {
     "com.unity.render-pipelines.universal": "7.1.6"
   },
-  "repository": {
-    "type": "git",
-    "com.litefeel.aligntools1": "https://github.com/litefeel/com.litefeel.aligntools1.git"
-  },
   "samples": [
     {
       "displayName": "Sample",
