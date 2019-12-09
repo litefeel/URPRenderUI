@@ -1,0 +1,33 @@
+{
+  "name": "com.litefeel.urprenderui",
+  "displayName": "URP RenderUI",
+  "version": "1.0.0",
+  "unity": "2019.3",
+  "description": "Display UI on Universal Render Pipeline",
+  "keywords": [
+    "UI",
+    "Align",
+    "Tools"
+  ],
+  "author": {
+    "name": "litefeel",
+    "email": "litefeel@gmial.com",
+    "url": "https://www.litefeel.com"
+  },
+  "category": "Tools",
+  "dependencies": {
+    "com.unity.render-pipelines.universal": "7.1.6"
+  },
+  "repository": {
+    "type": "git",
+    "com.litefeel.aligntools1": "https://github.com/litefeel/com.litefeel.aligntools1.git"
+  },
+  "samples": [
+    {
+      "displayName": "Sample",
+      "description": "Sample for Align Tools",
+      "path": "Samples~/Sample"
+    }
+  ],
+  "type": "library"
+}
