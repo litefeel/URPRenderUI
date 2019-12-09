@@ -1,6 +1,6 @@
 {
   "name": "com.litefeel.urprenderui",
-  "displayName": "URP RenderUI",
+  "displayName": "URP Render UI",
   "version": "1.0.0",
   "unity": "2019.3",
   "description": "Display UI on Universal Render Pipeline",
